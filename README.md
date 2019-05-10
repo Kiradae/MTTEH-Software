@@ -3,18 +3,13 @@
 ## Assignation des pins de l'Arduino Mega.
 [Arduino MEGA diagram](https://www.theengineeringprojects.com/wp-content/uploads/2018/06/introduction-to-arduino-mega-5.png)
 
-Compostants :
- - OV5642  : Caméra
- - EF03051 : Gyroscope
- - MMA8451 : Acceleromètre
- - SRD8110 : TF-Mini
- - 
-
 I2C :
- - SCL0 : 
+ - SCL0 : temperature Grove 101020556
  - SDA0 : 
  
 AREF :
+
+GND : 
 
 Serial Port 0 : 
  - 0 (RX) : MEGA16U2 (Programmateur).
@@ -31,8 +26,8 @@ Pin Digital / PWM :
  - 9 : 
  - 10 : 
  - 11 : 
- - 12 : 
- - 13 : INBUILT_LED 
+ - 12 : VMA306
+ - 13 : INBUILT_LED ; VMA306
 
 Pin Digital / Serial 1,2,3 :
  - 14 (TX) : 
@@ -48,7 +43,7 @@ Pin Digital / I2C / Serial 4 :
 
 Branche 5V :
  - 5V : OV5642
- - 5V : 
+ - 5V : MMA8451
 
 Extended Pin Digital :
  - 22 : 
@@ -90,12 +85,16 @@ Extended Pin Digital / SPI :
  - 52 (SCK) : 
  - 53 (SS) : 
 
+Branche GND :
+ - GND : 
+ - GND : 
+
 Pin Entrée Analogique / Digitale :
- - A1 : 
- - A2 : 
- - A3 : 
- - A4 : 
- - A5 : 
+ - A1 : UV Grove 101020043
+ - A2 : EF03051
+ - A3 : EF03051
+ - A4 : MMA8451
+ - A5 : MMA8451
  - A6 : 
  - A7 : 
  - A8 : 
@@ -111,8 +110,10 @@ Branche Alimentation :
  - N/C : 
  - IOREF : 
  - RESET : 
- - 3.3V : 
- - 5V : 
+ - 3.3V : EF03051
+ - 5V : MMA8451
+ - GND : 
+ - GND : 
  - Vin :
  
 ICSP : 
